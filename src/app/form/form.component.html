@@ -78,7 +78,7 @@
       </div>
 
       <!-- Hobbies -->
-      <div class="mb-3">
+      <!-- <div class="mb-3">
         <label class="form-label">Hobbies:</label>
         <div class="form-check">
           <input
@@ -113,7 +113,46 @@
           />
           <label for="gaming" class="form-check-label">Gaming</label>
         </div>
-      </div>
+      </div> -->
+
+
+      <!-- Hobbies -->
+<div class="mb-3">
+  <label class="form-label">Hobbies:</label>
+  <div class="form-check">
+    <input
+      type="checkbox"
+      value="Reading"
+      id="reading"
+      class="form-check-input"
+      (change)="onCheckboxChange($event)"
+      [checked]="hobbies.value.includes('Reading')"
+    />
+    <label for="reading" class="form-check-label">Reading</label>
+  </div>
+  <div class="form-check">
+    <input
+      type="checkbox"
+      value="Traveling"
+      id="traveling"
+      class="form-check-input"
+      (change)="onCheckboxChange($event)"
+      [checked]="hobbies.value.includes('Traveling')"
+    />
+    <label for="traveling" class="form-check-label">Traveling</label>
+  </div>
+  <div class="form-check">
+    <input
+      type="checkbox"
+      value="Gaming"
+      id="gaming"
+      class="form-check-input"
+      (change)="onCheckboxChange($event)"
+      [checked]="hobbies.value.includes('Gaming')"
+    />
+    <label for="gaming" class="form-check-label">Gaming</label>
+  </div>
+</div>
 
       <!-- Address -->
       <div class="mb-3">
